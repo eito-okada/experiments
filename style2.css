@@ -32,6 +32,9 @@ a:active {
 	height: 10vh;
 }
 
+label, #hamburger {
+    display: none;
+}
 
 .logo {
     display: flex;
@@ -141,6 +144,44 @@ a:active {
 @media screen and (max-width: 768px) {
     .sidebar {
         display: none;
+    }
+    .header {
+        height: 8vh;
+    }
+    .main {
+        top: 8vh;
+    }
+    .logo {
+        font-size: 1vh;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        width: 100%;
+    }
+    .headertab {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        border-top: 1px solid #333;
+    }
+    label {
+        display: block;
+        color: black;
+        font-style: normal;
+        font-size: 5vh;
+        float: left;
+        padding-left: 2vw;
+    }
+    .headerbar {
+        display: none;
+    }
+
+    .hamburger {
+        height: 8vh;
+    }
+
+    .hamburger input:checked ~ .headertab {
+        display: block;
     }
 }
 
