@@ -1,0 +1,196 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #bbb;
+    color: #333;
+    text-align: center;
+    margin: 0px;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+a:active {
+    color: black;
+    text-decoration: none;
+}
+
+
+.header {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background-color: #bbb;
+	height: 10vh;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	height: 82%;
+}
+
+.logo a {
+    width: 8ch;
+    animation: typing 2s steps(8), blink .5s step-end infinite alternate;
+    animation-delay: 2s;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: 'Major Mono Display', monospace;
+    font-size: 3em;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+.headerbar ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    margin: 0px;
+	height: 18%;
+}
+
+.headertab {
+    width: 25%;
+    text-align: center;
+    border: 2px solid black;
+}
+
+#headertab1 {
+    background-color: #aaa;
+}
+
+#headertab2 {
+    background-color: #999;
+}
+
+#headertab3 {
+    background-color: #888;
+}
+
+#headertab4 {
+    background-color: #777;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 10vh;
+    height: 90vh;
+}
+
+.sidebar {
+    width: 20%;
+	height: 90vh;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.sidebartab {
+    height: calc(90vh / 5 - 4px);
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(90vw / 45);
+}
+
+#sidebartab1 {
+    background-color: #666;
+}
+#sidebartab2 {
+    background-color: #777;
+}
+#sidebartab3 {
+    background-color: #888;
+}
+#sidebartab4 {
+    background-color: #999;
+}
+#sidebartab5 {
+    background-color: #aaa;
+}
+
+@media screen and (max-width: 768px) {
+    .logo 
+    .sidebar {
+        display: none;
+    }
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type:y proximity;
+}
+
+.introduction {
+    width: inherit;
+    border: 2px solid black;
+    padding: 60px 0px 60px 0px;
+    scroll-snap-align: start;
+}
+
+.skiing {
+    width: inherit;
+    border: 2px solid black;
+    padding: 60px 0px 60px 0px;
+    scroll-snap-align: start;
+}
+
+.speedcubing {
+    width: inherit;
+    border: 2px solid black;
+    padding: 60px 0px 60px 0px;
+    scroll-snap-align: start;
+}
+
+.bowling {
+    width: inherit;
+    border: 2px solid black;
+    padding: 60px 0px 60px 0px;
+    scroll-snap-align: start;
+}
+
+.tableTennis {
+    width: inherit;
+    border: 2px solid black;
+    padding: 60px 0px 60px 0px;
+    scroll-snap-align: start;
+}
+
+.baseball {
+    width: inherit;
+    border: 2px solid black;
+    padding: 60px 0px 60px 0px;
+    scroll-snap-align: start;
+}
