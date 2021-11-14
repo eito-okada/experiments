@@ -139,7 +139,6 @@ a:active {
 }
 
 @media screen and (max-width: 768px) {
-    .logo 
     .sidebar {
         display: none;
     }
