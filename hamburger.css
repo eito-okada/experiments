@@ -1,30 +1,13 @@
 /* [ON BIG SCREEN] */
 /* (A) WRAPPER */
-#hamnav {
+.headernav {
     width: 100%;
-    background: #fff;
 }
 
 /* (B) HORIZONTAL MENU ITEMS */
-#hamitems {
-    display: block;
-}
-
-#hamitems a {
-    padding: 10px;
-    color: #000;
-    text-decoration: none;
-    text-align: center;
-    outline: 1px solid black;
-}
-
-#hamitems a:hover {
-    background: #333;
-    color: #fff;
-}
 
 /* (C) HIDE HAMBURGER */
-#hamnav label,
+.headernav label,
 #hamburger {
     display: none;
 }
@@ -33,29 +16,34 @@
 @media screen and (max-width: 768px) {
 
     /* (A) BREAK INTO VERTICAL MENU */
-    #hamitems a {
+    .headertab {
         box-sizing: border-box;
         display: block;
         width: 100%;
         border-top: 1px solid #333;
+        height: 15vh;
+        list-style-type: none;
+        float: left;
+        background: rgba(0, 0, 0, 0.6);
+        color: white;
     }
 
     /* (B) SHOW HAMBURGER ICON */
-    #hamnav label {
+    .headernav label {
         display: inline-block;
         color: white;
-        background: #a02620;
+        background: #aaa;
         font-style: normal;
         font-size: 1.2em;
         padding: 10px;
     }
 
     /* (C) TOGGLE SHOW/HIDE MENU */
-    #hamitems {
+    .headerbar ul {
         display: none;
     }
 
-    #hamnav input:checked~#hamitems {
+    .headernav input:checked~.headerbar ul {
         display: block;
     }
 }

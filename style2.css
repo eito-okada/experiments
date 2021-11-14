@@ -32,10 +32,6 @@ a:active {
 	height: 10vh;
 }
 
-label, #hamburger {
-    display: none;
-}
-
 .logo {
     display: flex;
     align-items: center;
@@ -97,6 +93,85 @@ label, #hamburger {
     background-color: #777;
 }
 
+/* [ON BIG SCREEN] */
+/* (A) WRAPPER */
+.headernav {
+    width: 100%;
+}
+
+/* (B) HORIZONTAL MENU ITEMS */
+
+/* (C) HIDE HAMBURGER */
+.headernav label,
+#hamburger {
+    display: none;
+}
+
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px) {
+
+    /* (A) BREAK INTO VERTICAL MENU */
+    .headertab {
+        display: flex;
+        width: 100%;
+        border-top: 1px solid #333;
+        list-style-type: none;
+        float: left;
+        color: white;
+        height: calc(90vh / 4);
+        background-color: #aaa;
+        justify-content: center;
+        align-items: center;
+    }
+    #headertab1 {
+        background-color: #aaa; 
+    }
+    
+    #headertab2 {
+        background-color: #aaa;
+    }
+    
+    #headertab3 {
+        background-color: #aaa;
+    }
+    
+    #headertab4 {
+        background-color: #aaa;
+    }
+
+    /* (B) SHOW HAMBURGER ICON */
+    .headernav label {
+        display: inline-block;
+        color: black;
+        position: absolute;
+        top: 2vh;
+        left: 1vw;
+        background: #bbb;
+        font-style: normal;
+        font-size: 1em;
+        vertical-align: middle;
+        height: 8vh;
+    }
+
+    /* (C) TOGGLE SHOW/HIDE MENU */
+    .headerbar ul {
+        display: none;
+    }
+
+    .headernav input:checked~.headerbar ul {
+        display: block;
+    }
+    .sidebar {
+        display: none;
+    }
+    .logo {
+        height: 100%;
+    }
+    .logo a {
+        font-size: 2em;
+    }
+}
+
 .main {
     display: flex;
     flex-direction: row;
@@ -141,49 +216,7 @@ label, #hamburger {
     background-color: #aaa;
 }
 
-@media screen and (max-width: 768px) {
-    .sidebar {
-        display: none;
-    }
-    .header {
-        height: 8vh;
-    }
-    .main {
-        top: 8vh;
-    }
-    .logo {
-        font-size: 1vh;
-        height: 100%;
-        position: absolute;
-        top: 0px;
-        width: 100%;
-    }
-    .headertab {
-        box-sizing: border-box;
-        display: block;
-        width: 100%;
-        border-top: 1px solid #333;
-    }
-    label {
-        display: block;
-        color: black;
-        font-style: normal;
-        font-size: 5vh;
-        float: left;
-        padding-left: 2vw;
-    }
-    .headerbar {
-        display: none;
-    }
 
-    .hamburger {
-        height: 8vh;
-    }
-
-    .hamburger input:checked ~ .headertab {
-        display: block;
-    }
-}
 
 .content {
     height: 100%;
