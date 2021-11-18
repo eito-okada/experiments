@@ -1,0 +1,62 @@
+html, body {
+    height: 100%;
+    margin: 0 0 0 0;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    font-size: 4vh;
+}
+
+a:link {color: white; text-decoration: none;}
+a:visited {color: white; text-decoration: none;}
+a:hover {color: white; text-decoration: none;}
+a:active {color: white; text-decoration: none;}
+
+
+.menu {
+    display: flex;
+    width: 100%;
+}
+
+.blog,
+.contact,
+.about {
+    flex-grow: 1;
+    /* Allow each flex item to grow */
+    flex-shrink: 1;
+    /* Allow each flex item to shrink */
+    width: calc(100vw / 3);
+    height: 100vh;
+    /* Used only to make them visible */
+    transition: width 0.5s;
+    /* Animate the change of width */
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.blog {
+    background-image: url("/blue-eito.gif");
+}
+
+.about {
+    background-image: url("/green-eito.gif");
+}
+
+.contact {
+    background-image: url("/red-eito.gif");
+}
+
+.blog:hover {
+    width: 40%;
+}
+
+.about:hover {
+    width: 40%;
+}
+
+.contact:hover {
+    width: 40%;
+}

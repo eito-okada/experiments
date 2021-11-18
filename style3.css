@@ -1,0 +1,42 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    font-family: "Roboto", sans-serif;
+}
+
+h1 {
+    margin: 0px;
+    font-size: 5vh;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: calc(100vw / 3);
+    flex-grow: 1;
+    height: 100vh;
+}
+
+.blog {
+    background-color: blue;
+}
+
+.about {
+    background-color: greenyellow;
+}
+
+.contact {
+    background-color: red;
+}
+
+.tab:hover {
+    flex-grow: 2;
+}
