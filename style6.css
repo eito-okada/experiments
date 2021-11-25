@@ -1,0 +1,13 @@
+body {
+    scroll-snap-type: y mandatory;
+}
+
+.fixed {
+    position: sticky;
+    top: 0px;
+    background-color: white;
+}
+
+.unfixed {
+    scroll-snap-align: start;
+}

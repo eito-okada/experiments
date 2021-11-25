@@ -1,0 +1,23 @@
+.div1 {
+    width: 200px;
+    height: 500px;
+    background-color: yellow;
+  }
+  
+  .div2 {
+    width: 200px;
+    height: 800px;
+    background-color: orange;
+  }
+  
+  .div2inside {
+    background-color: red;
+    position: sticky;
+    top: 50vh;
+  }
+  
+  .div3 {
+    width: 200px;
+    height: 1000px;
+    background-color: pink;
+  }
