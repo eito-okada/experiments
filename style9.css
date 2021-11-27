@@ -188,32 +188,44 @@ a:active {
     background-position: center;
 }
 
+.thumbnail1:hover,
+.thumbnail2:hover,
+.thumbnail3:hover,
+.thumbnail4:hover,
+.thumbnail5:hover,
+.thumbnail6:hover,
+.thumbnail7:hover,
+.thumbnail8:hover,
+.thumbnail9:hover {
+    background-size: 33vh;
+}
+
 .thumbnail1 {
-    background-image: url("/puic/blue-eito.gif");
+    background-image: url("/public/blue-eito.gif");
 }
 
 .thumbnail2 {
-    background-image: url("/publc/blue-eito.gif");
+    background-image: url("/public/blue-eito.gif");
 }
 
 .thumbnail3 {
-    background-image: url("/publc/blue-eito.gif");
+    background-image: url("/public/blue-eito.gif");
 }
 
 .thumbnail4 {
-    background-image: url("/public/blu-eito.gif");
+    background-image: url("/public/blue-eito.gif");
 }
 
 .thumbnail5 {
-    background-image: url("/public/blueito.gif");
+    background-image: url("/public/blue-eito.gif");
 }
 
 .thumbnail6 {
-    background-image: url("/public/blue-eitogif");
+    background-image: url("/public/blue-eito.gif");
 }
 
 .thumbnail7 {
-    background-image: url("/public/blue-eito.if");
+    background-image: url("/public/blue-eito.gif");
 }
 
 .thumbnail8 {
