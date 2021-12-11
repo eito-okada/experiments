@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style12.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="script5.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="">Eito's Blog</a>
+        </div>
+        <div class="navbar">
+            <div class="navbartab">
+                <a href="">Home</a>
+            </div>
+            <div class="navbartab">
+                <a href="">My Blog</a>
+            </div>
+            <div class="navbartab">
+                <a href="">About</a>
+            </div>
+            <div class="navbartab">
+                <a href="">Contact Me</a>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="articles">
+            <div class="title">
+                <h2>Articles</h2>
+                <div class="articlesearch">
+                    <input type="search" placeholder='' id="search">
+                    <button class="sort" data-sort="date">
+                        Sorting by: <span class="featured">featured</span><span class="newest">Newest</span><span class="oldest">Oldest</span><span class="popularity">Popularity</span><span class="liked">Most liked</span>
+                    </button>
+                    <button onclick="sortList()">Sort</button>
+                </div>
+            </div>
+            <ul class="list" id="list">
+                <li class="post">
+                    <div class="thumbnail" id="thumbnail10"></div>
+                    <div class="description">
+                        <h3 class="name">My tenth post</h3>
+                        <p class="date">12/3/21</p>
+                    </div>
+                </li>
+                <li class="post">
+                    <div class="thumbnail" id="thumbnail9"></div>
+                    <div class="description">
+                        <h3 class="name">My tenth post</h3>
+                        <p class="date">12/2/21</p>
+                    </div>
+                </li>
+                <li class="post">
+                    <div class="thumbnail" id="thumbnail8"></div>
+                    <div class="description">
+                        <h3 class="name">My tenth post</h3>
+                        <p class="date">12/1/21</p>
+                    </div>
+                </li>
+                <li class="post">
+                    <div class="thumbnail" id="thumbnail7"></div>
+                    <div class="description">
+                        <h3 class="name">My tenth post</h3>
+                        <p class="date">11/30/21</p>
+                    </div>
+                </li>
+                <li class="post">
+                    <div class="thumbnail" id="thumbnail6"></div>
+                    <div class="description">
+                        <h3 class="name">My tenth post</h3>
+                        <p class="date">11/29/21</p>
+                    </div>
+                </li>
+                <li class="post">
+                    <div class="thumbnail" id="thumbnail5"></div>
+                    <div class="description">
+                        <h3 class="name">My tenth post</h3>
+                        <p class="date">11/28/21</p>
+                    </div>
+                </li>
+                <li class="post">
+                    <div class="thumbnail" id="thumbnail4"></div>
+                    <div class="description">
+                        <h3 class="name">My tenth post</h3>
+                        <p class="date">11/27/21</p>
+                    </div>
+                </li>
+                <li class="post">
+                    <div class="thumbnail" id="thumbnail3"></div>
+                    <div class="description">
+                        <h3 class="name">My tenth post</h3>
+                        <p class="date">11/26/21</p>
+                    </div>
+                </li>
+                <li class="post">
+                    <div class="thumbnail" id="thumbnail2"></div>
+                    <div class="description">
+                        <h3 class="name">My tenth post</h3>
+                        <p class="date">11/25/21</p>
+                    </div>
+                </li>
+                <li class="post">
+                    <div class="thumbnail" id="thumbnail1"></div>
+                    <div class="description">
+                        <h3 class="name">My tenth post</h3>
+                        <p class="date">11/24/21</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

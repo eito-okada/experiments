@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="style13.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="script7.js"></script>
+    <script src="script8.js"></script>
+    <script src="loader.js"></script>
+
+</head>
+
+<body>
+    <div id="loader">
+        <p>Loading...</p>
+    </div>
+    <div class="header">
+        <div class="logo">
+            <a href="">Eito's Blog</a>
+        </div>
+        <div class="navbar">
+            <div class="navbartab">
+                <a href="">Home</a>
+            </div>
+            <div class="navbartab">
+                <a href="">My Blog</a>
+            </div>
+            <div class="navbartab">
+                <a href="">About</a>
+            </div>
+            <div class="navbartab">
+                <a href="">Contact Me</a>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="articles">
+            <div class="title">
+                <h2>Articles</h2>
+                <div class="articlesearch">
+                    <input placeholder="" id='search' class="search">
+                    <button class="sort" data-sort="date">
+                        Sorting by: <span class="featured">Featured</span><span class="newest">Newest</span><span class="oldest">Oldest</span>
+                    </button>
+                </div>
+            </div>
+            <ul class="list" id='list'>
+                <li class="post">
+                    <a href="">
+                        <div class="thumbnail" id="thumbnail1"></div>
+                        <div class="description">
+                            <h3 class="name">My Post</h3>
+                            <p class="date">12/11/21</p>
+                            <p class="visits"><span class="visited" id="visits121121"></span> Visits</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="post">
+                    <a href="">
+                        <div class="thumbnail" id="thumbnail1"></div>
+                        <div class="description">
+                            <h3 class="name">My post</h3>
+                            <p class="date">12/12/21</p>
+                            <p class="visits"><span class="visited" id="visits121221"></span> Visits</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="post">
+                    <a href="">
+                        <div class="thumbnail" id="thumbnail1"></div>
+                        <div class="description">
+                            <h3 class="name">My post</h3>
+                            <p class="date">12/13/21</p>
+                            <p class="visits"><span class="visited" id="visits121321"></span> Visits</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="post">
+                    <a href="">
+                        <div class="thumbnail" id="thumbnail1"></div>
+                        <div class="description">
+                            <h3 class="name">My post</h3>
+                            <p class="date">12/14/21</p>
+                            <p class="visits"><span class="visited" id="visits121421"></span> Visits</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="post">
+                    <a href="">
+                        <div class="thumbnail" id="thumbnail1"></div>
+                        <div class="description">
+                            <h3 class="name">My post</h3>
+                            <p class="date">12/15/21</p>
+                            <p class="visits"><span class="visited" id="visits121521"></span> Visits</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="post">
+                    <a href="">
+                        <div class="thumbnail" id="thumbnail1"></div>
+                        <div class="description">
+                            <h3 class="name">My post</h3>
+                            <p class="date">12/16/21</p>
+                            <p class="visits"><span class="visited" id="visits121621"></span> Visits</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="post">
+                    <a href="">
+                        <div class="thumbnail" id="thumbnail1"></div>
+                        <div class="description">
+                            <h3 class="name">My post</h3>
+                            <p class="date">12/17/21</p>
+                            <p class="visits"><span class="visited" id="visits121721"></span> Visits</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="post">
+                    <a href="">
+                        <div class="thumbnail" id="thumbnail1"></div>
+                        <div class="description">
+                            <h3 class="name">My post</h3>
+                            <p class="date">12/18/21</p>
+                            <p class="visits"><span class="visited" id="visits121821"></span> Visits</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="post">
+                    <a href="">
+                        <div class="thumbnail" id="thumbnail1"></div>
+                        <div class="description">
+                            <h3 class="name">My post</h3>
+                            <p class="date">12/19/21</p>
+                            <p class="visits"><span class="visited" id="visits121921"></span> Visits</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="post">
+                    <a href="">
+                        <div class="thumbnail" id="thumbnail1"></div>
+                        <div class="description">
+                            <h3 class="name">My post</h3>
+                            <p class="date">12/20/21</p>
+                            <p class="visits"><span class="visited" id="visits122021"></span> Visits</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul class="pagination"></ul>
+        </div>
+    </div>
+</body>
+<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+<script src="script9.js"></script>
+
+</html>
