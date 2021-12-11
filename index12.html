@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
     <script src="script7.js"></script>
     <script src="script8.js"></script>
     <script src="loader.js"></script>
@@ -42,13 +42,16 @@
         </div>
     </div>
     <div class="main">
-        <div class="articles">
+        <div class="articles" id="articles">
             <div class="title">
                 <h2>Articles</h2>
                 <div class="articlesearch">
-                    <input placeholder="" id='search' class="search">
+                    <input type='search' placeholder="Search Articles..." class="search">
                     <button class="sort" data-sort="date">
                         Sorting by: <span class="featured">Featured</span><span class="newest">Newest</span><span class="oldest">Oldest</span>
+                    </button>
+                    <button class="sort" data-sort="date">
+                        Sorting by: <span class='featured'>Featured</span><span class="mostvisits">Most Visited</span>
                     </button>
                 </div>
             </div>
@@ -157,8 +160,8 @@
             <ul class="pagination"></ul>
         </div>
     </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
+    <script src="script9.js"></script>
 </body>
-<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
-<script src="script9.js"></script>
 
 </html>

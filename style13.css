@@ -3,12 +3,13 @@ body {
     margin: 0px;
     font-family: "Roboto", sans-serif;
     width: 100%;
-    height: 100vh;
+    height: max-content;
     background: linear-gradient(45deg, #95dbe5, #078282, #057dcd);
     /*グラデーションを定義*/
     background-size: 200% 200%;
     /*サイズを大きくひきのばす*/
     animation: bggradient 20s ease infinite;
+    min-height: 100vh;
 }
 
 @keyframes bggradient {
@@ -112,6 +113,7 @@ a:active {
     position: relative;
     top: 10vh;
     width: 100vw;
+    height: max-content;
 }
 
 #articles {
@@ -149,13 +151,33 @@ a:active {
     border: 1px solid black;
 }
 
+.sort .newest,
+.sort .oldest {
+    display: none;
+}
+
+.sort.asc .featured {
+    display: none;
+}
+
+.sort.asc .oldest {
+    display: inline-block;
+}
+
+.sort.desc .featured {
+    display: none;
+}
+
+.sort.desc .newest {
+    display: inline-block;
+}
+
 .list {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
     list-style-type: none;
-    height: 90vh;
     position: relative;
     top: 20vh;
 }
@@ -249,4 +271,18 @@ a:active {
 
 .visits {
     text-align: center;
+}
+
+.pagination {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    height: 8vh;
+    position: relative;
+    top: 20vh;
+}
+
+.pagination li {
+    padding: 3vh;
 }

@@ -1,9 +1,7 @@
 var options = {
-    valueNames: ['date', 'visited'],
-    page: 9,
-    pagination: true
+    valueNames: ['name', 'date'],
+    pagination: true,
+    outerWindow: 1,
+    order: 'desc',
+    page: 9
 };
-
-var postList = new List('articles', options);
-
-$('.search').attr('placeholder', 'Search ' + $('.post').length + ' articles...');
