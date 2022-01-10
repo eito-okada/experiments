@@ -11,34 +11,50 @@
 
 <body>
     <div id="users">
-        <input class="search" placeholder="Search" />
-        <button class="sort" data-sort="name">
-            Sort by name
-        </button>
-
-        <ul class="list">
+        <div style='display: flex;'>
+            <input class="search" placeholder="Search" />
+            <div>
+                <button class='showsort'>Sort by:</button>
+                <div class="sortoptions" style="display: none;">
+                    <button class="sort" data-sort="name" style="display: block;">
+                        name
+                    </button>
+                    <button class="sort" data-sort="born" style="display: block;">
+                        born
+                    </button>
+                    <button class="sort" data-sort="visits" style="display: block;">
+                        visits
+                    </button>
+                </div>
+            </div>
+        </div>
+        <ul class="list ">
             <li>
-                <h3 class="name">Jonny Stromberg</h3>
-                <p class="born">1986</p>
+                <h3 class="name ">Jonny Stromberg</h3>
+                <p class="born ">1986</p>
+                <p class='visits' id="visits1"></p>
             </li>
             <li>
-                <h3 class="name">Jonas Arnklint</h3>
-                <p class="born">1985</p>
+                <h3 class="name ">Jonas Arnklint</h3>
+                <p class="born ">1985</p>
+                <p class='visits' id="visits2"></p>
             </li>
             <li>
-                <h3 class="name">Martina Elm</h3>
-                <p class="born">1986</p>
+                <h3 class="name ">Martina Elm</h3>
+                <p class="born ">1984</p>
+                <p class='visits' id="visits3"></p>
             </li>
             <li>
-                <h3 class="name">Gustaf Lindqvist</h3>
-                <p class="born">1983</p>
+                <h3 class="name ">Gustaf Lindqvist</h3>
+                <p class="born ">1983</p>
+                <p class='visits' id="visits4"></p>
             </li>
         </ul>
 
     </div>
-
 </body>
-<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
-<script src="script10.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js " integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin=" anonymous "></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js "></script>
+<script src="script10.js "></script>
 
 </html>

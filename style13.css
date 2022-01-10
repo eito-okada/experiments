@@ -2,6 +2,7 @@ html,
 body {
     margin: 0px;
     font-family: "Roboto", sans-serif;
+    font-weight: 300;
     width: 100%;
     height: max-content;
     background: linear-gradient(45deg, #95dbe5, #078282, #057dcd);
@@ -32,6 +33,11 @@ h3 {
     margin: 0px;
     padding: 0px;
     border: 0px;
+    font-weight: 300;
+}
+
+button {
+    margin: 0px;
 }
 
 a:link {
@@ -56,19 +62,59 @@ a:active {
 
 #loader {
     position: fixed;
-    background-color: #057dcd;
+    background-color: #1e3d58;
     z-index: 3;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
 #loader p {
     font-size: 10vh;
+}
+
+
+/* Absolute Center Spinner */
+
+.loading {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding: 10vh;
+}
+
+.loading:before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.loading:not(:required):after {
+    content: '';
+    font-size: 10px;
+    width: 1em;
+    height: 1em;
+    animation: spinner 1500ms infinite linear;
+    border-radius: 0.5em;
+    box-shadow: rgba(0, 0, 0, 0.75) 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, rgba(0, 0, 0, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) -1.5em 0 0 0, rgba(0, 0, 0, 0.75) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
+}
+
+
+/* Animation */
+
+@keyframes spinner {
+    0% {
+        rotate: (0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        rotate: (360deg);
+        transform: rotate(360deg);
+    }
 }
 
 .header {
@@ -122,10 +168,6 @@ a:active {
 
 .title {
     width: 100vw;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
     font-size: 5vh;
     height: 20vh;
     position: fixed;
@@ -137,6 +179,7 @@ a:active {
 
 .title h2 {
     color: black;
+    text-align: center;
 }
 
 .search {
@@ -145,31 +188,45 @@ a:active {
     border-radius: 0.7vh;
 }
 
-.sort {
-    border-radius: 1vh;
-    height: 5vh;
-    border: 1px solid black;
+.sortby {
+    font-size: 2vh;
+    height: 4vh;
+    vertical-align: middle;
+    display: inline-flex;
+    align-items: center;
+    background-color: white;
 }
 
-.sort .newest,
-.sort .oldest {
-    display: none;
+.sortitems {
+    display: flex;
+    justify-content: center;
 }
 
-.sort.asc .featured {
-    display: none;
+.articlesearch {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-.sort.asc .oldest {
-    display: inline-block;
+.sortoption {
+    height: 4vh;
+    text-align: left;
+    display: block;
+    width: 100%;
+    border: 0px solid black;
+    background-color: white;
 }
 
-.sort.desc .featured {
-    display: none;
+#toggleoptions {
+    vertical-align: middle;
+    height: 4vh;
+    border: 0px solid black;
+    background-color: white;
 }
 
-.sort.desc .newest {
-    display: inline-block;
+.activesort {
+    font-weight: bold;
 }
 
 .list {
@@ -223,46 +280,6 @@ a:active {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
-
-#thumbnail1 {
-    background-image: url("https://picsum.photos/1000");
-}
-
-#thumbnail2 {
-    background-image: url("https://picsum.photos/1000");
-}
-
-#thumbnail3 {
-    background-image: url("https://picsum.photos/1000");
-}
-
-#thumbnail4 {
-    background-image: url("https://picsum.photos/1000");
-}
-
-#thumbnail5 {
-    background-image: url("https://picsum.photos/1000");
-}
-
-#thumbnail6 {
-    background-image: url("https://picsum.photos/1000");
-}
-
-#thumbnail7 {
-    background-image: url("https://picsum.photos/1000");
-}
-
-#thumbnail8 {
-    background-image: url("https://picsum.photos/1000");
-}
-
-#thumbnail9 {
-    background-image: url("https://picsum.photos/1000");
-}
-
-#thumbnail10 {
-    background-image: url("https://picsum.photos/1000");
 }
 
 .date {

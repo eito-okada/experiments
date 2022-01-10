@@ -1,0 +1,1 @@
+tinysort(NodeList, { selector: '.surname' }, { selector: '.name' }, { data: 'age' });
