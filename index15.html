@@ -6,21 +6,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="/list.js/dist/list.min.js"></script>
 </head>
 
 <body>
-    <div class="articles" id='articles'>
-        <ul>
-            <li class='getitem' id='getitem1'></li>
-            <li class='getitem' id='getitem2'></li>
-            <li class='getitem' id='getitem3'></li>
-        </ul>
+    <div class="newest">
+        <h1>Newest Articles</h1>
+        <div class="articles" id='articles'>
+            <ul>
+                <li class="post">
+                    <a href="">
+                        <div class="thumbnail" id="thumbnail9"></div>
+                        <div class="description">
+                            <h3 id="name1"></h3>
+                            <p id="date1"></p>
+                            <p id="visits122121"></p>
+                        </div>
+                    </a>
+                </li>
+                <li class="post">
+                    <a href="">
+                        <div class="thumbnail" id="thumbnail8"></div>
+                        <div class="description">
+                            <h3 id="name2"></h3>
+                            <p id="date2"></p>
+                            <p id="visits122120"></p>
+                        </div>
+                    </a>
+                </li>
+                <li class="post">
+                    <a href="">
+                        <div class="thumbnail" id="thumbnail8"></div>
+                        <div class="description">
+                            <h3 id="name3"></h3>
+                            <p id="date3"></p>
+                            <p id="visits122119"></p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+    <div class="newest">
+        <h1>Popular Articles</h1>
+        <div class="articles" id='articles'>
+            <ul>
+                <li class="post">
+                    <a href="">
+                        <div class="thumbnail" id="thumbnail9"></div>
+                        <div class="description">
+                            <h3 id="name1"></h3>
+                            <p id="date1"></p>
+                            <p id="visits122121"></p>
+                        </div>
+                    </a>
+                </li>
+                <li class="post">
+                    <a href="">
+                        <div class="thumbnail" id="thumbnail8"></div>
+                        <div class="description">
+                            <h3 id="name2"></h3>
+                            <p id="date2"></p>
+                            <p id="visits122120"></p>
+                        </div>
+                    </a>
+                </li>
+                <li class="post">
+                    <a href="">
+                        <div class="thumbnail" id="thumbnail8"></div>
+                        <div class="description">
+                            <h3 id="name3"></h3>
+                            <p id="date3"></p>
+                            <p id="visits122119"></p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
 
 
-    <div class="load1"></div>
+    <div id="load1" style='display: none; '></div>
+    <div id="load2" style="display: none;"></div>
     <script src="script10.js"></script>
 </body>
 
