@@ -1,5 +1,7 @@
-function visits() {
+$(function() {
     visits121221();
+
+    var visitsdata = new Array($('.post').length);
 
     function visits121221() {
         $.getJSON("https://api.countapi.xyz/get/hatchokada.lsv.jp.121221/visits", function(response) {
@@ -32,7 +34,7 @@ function visits() {
         $.getJSON("https://api.countapi.xyz/get/hatchokada.lsv.jp.121521/visits", function(response) {
             $("#visits121521").text(response.value);
             visitsdata[3] = response.value;
-        });
+        })
         visits121621();
     }
 
@@ -167,4 +169,10 @@ function visits() {
         visits122921();
     }
 
-}
+    function visits122921() {
+        $.getJSON("https://api.countapi.xyz/get/hatchokada.lsv.jp.122921/visits", function(response) {
+            $('#visits122921').text(response.value);
+            visitsdata[17] = response.value;
+        })
+    }
+})
