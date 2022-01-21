@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello, world!</title>
+    <link rel="stylesheet" href="style16.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="">Eito's Blog</a>
+        </div>
+        <div class="navbar">
+            <div class="navbartab">
+                <a href="">Home</a>
+            </div>
+            <div class="navbartab">
+                <a href="">My Blog</a>
+            </div>
+            <div class="navbartab">
+                <a href="">About</a>
+            </div>
+            <div class="navbartab">
+                <a href="">Contact Me</a>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="content" id='content' data-genre='other'>
+            <div class="title">
+                <img src="" alt="" draggable='false'>
+                <h1>Hello, World!</h1>
+                <div class="description">
+                    <p>Published on 12/31/2021</p>
+                    <p><span id='visits'></span> visits</p>
+                </div>
+            </div>
+            <div class="column">
+                <p>
+                    Hello, and welcome to my blog! <br> On my blog, I will be talking about my daily life, my hobbies, and some programming/coding related themes. As you may have seen on the
+                    <a href="">about</a> page, I will be posting about two to three times a week.
+                </p>
+                <h2>Themes I will cover:</h2>
+                <ol>
+                    <li>
+                        Programming, coding (HTML, CSS, PHP, JavaScript, C, Python...)
+                        <br>
+                        <p>I will write about what I make, and will give tips on how to do things, etc.</p>
+                    </li>
+                    <li>
+                        My other hobbies (Guitar, airplanes, speedcubing, bowling, table tennis...)
+                        <p>This will be about my other hobbies. I will write articles when I go to compertitions or achieve something.</p>
+                    </li>
+                    <li>
+                        My daily life (School events, interesting experiences, etc.)
+                        <p>This will just be about my normal daily life, whether it be about normal days or special days.</p>
+                    </li>
+                    <li>Maybe some requested ideas or questions (Give me requests/questions from my <a href="">contact page</a>)</li>
+                </ol>
+                <p>
+                    Furthermore, I will be making regular updates on this website. If you have any requests, problems, or questions on articles or the website, email me from <a href="../contact">here</a>. Since this website is still in development, I
+                    won't post many articles for now. I am scheduling to finish the website by May 2022.
+                </p>
+                <h2>Updates to expect in the future:</h2>
+                <ul>
+                    <li>Ads (For some profit, but I will keep them small)</li>
+                    <li>"<s>Recommended</s> Newest/popular/related articles" section in sidebars</li>
+                    <li>Mobile responsive styling</li>
+                    <li>Commenting, liking/disliking function</li>
+                    <li>And more!</li>
+                </ul>
+                <p>For more information, please read my
+                    <a href="">update log</a>.
+                </p>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="related">
+                <h2 class='sectiontitle'>Newest</h2>
+                <ul class='list'>
+                    <li class='sortpost' id='related1'>
+                        <a href="">
+                            <img class="postthumbnail"" id='thumbnail1'>
+                            <div class="postdescription">
+                                <h3 id='name1'></h3>
+                                <p id='date1'></p>
+                                <p><span id='visits1'></span> Visits</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class='sortpost' id='related2'>
+                        <a href="">
+                            <img class="postthumbnail"" id='thumbnail2'>
+                            <div class="postdescription">
+                                <h3 id='name2'></h3>
+                                <p id='date2'></p>
+                                <p><span id='visits2'></span> Visits</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class='sortpost' id='related3'>
+                        <a href="">
+                            <img class="postthumbnail"" id='thumbnail3'>
+                            <div class="postdescription">
+                                <h3 id='name3'></h3>
+                                <p id='date3'></p>
+                                <p><span id='visits3'></span> Visits</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="popular">
+                <h2 class='sectiontitle'>Most popular</h2>
+                <ul class='list'>
+                    <li class='sortpost' id='popular1'>
+                        <a href="">
+                            <img class="postthumbnail"" id='thumbnail4'>
+                            <div class="postdescription">
+                                <h3 id='name4'></h3>
+                                <p id='date4'></p>
+                                <p><span id='visits4'></span> Visits</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class='sortpost' id='popular2'>
+                        <a href="">
+                            <img class="postthumbnail"" id='thumbnail5'>
+                            <div class="postdescription">
+                                <h3 id='name5'></h3>
+                                <p id='date5'></p>
+                                <p><span id='visits5'></span> Visits</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class='sortpost' id='popular3'>
+                        <a href="">
+                            <img class="postthumbnail"" id='thumbnail6'>
+                            <div class="postdescription">
+                                <h3 id='name6'></h3>
+                                <p id='date6'></p>
+                                <p><span id='visits6'></span> Visits</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="newest">
+                <h2 class='sectiontitle'>Related</h2>
+                <ul class='list'>
+                    <li class='sortpost' id='related1'>
+                        <a href="">
+                            <img class="postthumbnail"" id='thumbnail7'>
+                            <div class="postdescription">
+                                <h3 id='name7'></h3>
+                                <p id='date7'></p>
+                                <p><span id='visits7'></span> Visits</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class='sortpost' id='related2'>
+                        <a href="">
+                            <img class="postthumbnail"" id='thumbnail8'>
+                            <div class="postdescription">
+                                <h3 id='name8'></h3>
+                                <p id='date8'></p>
+                                <p><span id='visits8'></span> Visits</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class='sortpost' id='related6'>
+                        <a href="">
+                            <img class="postthumbnail"" id='thumbnail9'>
+                            <div class="postdescription">
+                                <h3 id='name9'></h3>
+                                <p id='date9'></p>
+                                <p><span id='visits9'></span> Visits</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="load1" style='display: none;'></div>
+</body>
+<script src="script10.js"></script>
+<script src="script11.js"></script>
+<script src=" https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js "></script>
+
+</html>

@@ -1,0 +1,160 @@
+html,
+body {
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+h1,
+h3,
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+a:active {
+    color: white;
+    text-decoration: none;
+}
+
+.mix-blend-mode body {
+    color: white;
+}
+
+.header {
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0px;
+    background-color: #1e3d58;
+    z-index: 1;
+}
+
+.logo {
+    font-size: 4vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+}
+
+.navbar {
+    display: flex;
+    height: 10vh;
+    width: 80vw;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbartab:hover {
+    mix-blend-mode: soft-light;
+}
+
+.main {
+    position: relative;
+    top: 10vh;
+    display: flex;
+    width: 100vw;
+    color: #95dbe5;
+}
+
+.content {
+    width: 80vw;
+    background-color: #057dcd;
+    font-weight: 400;
+}
+
+.sidebar {
+    width: 20vw;
+    background-color: #059dc0;
+}
+
+.title {
+    width: 100%;
+    margin-bottom: 5vh;
+}
+
+.title img {
+    width: 100%;
+    height: 40vh;
+    object-fit: contain;
+}
+
+.title h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 6vh;
+}
+
+.description {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.column {
+    width: 100%;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.column ul {
+    text-align: left;
+}
+
+.column a {
+    display: inline-block;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    align-items: center;
+    padding: 0px;
+}
+
+.sortpost {
+    height: 30vh;
+    width: 15vw;
+    text-align: center;
+    background: white;
+    margin-top: 10px;
+    border-radius: 1vh;
+}
+
+.sectiontitle {
+    text-align: center;
+}
+
+.postthumbnail {
+    height: 20vh;
+    width: 15vw;
+    border-top-right-radius: 1vh;
+    border-top-left-radius: 1vh;
+}
+
+.postdescription {
+    color: black;
+}

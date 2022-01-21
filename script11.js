@@ -1,4 +1,8 @@
+console.log('starting')
 var visitsdata = [];
+$.getJSON("https://api.countapi.xyz/hit/hatchokada.lsv.jp.121221/visits", function(response) {
+    $('#visits').text(response.value);
+})
 $.getJSON("https://api.countapi.xyz/get/hatchokada.lsv.jp.121221/visits", function(response1) {
     $("#visits121221").text(response1.value);
     visitsdata[0] = response1.value;
