@@ -41,8 +41,12 @@ button {
 }
 
 a {
-    color: white;
+    color: black;
     text-decoration: none;
+}
+
+.header a {
+    color: white;
 }
 
 #loader {
