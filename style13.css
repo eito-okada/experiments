@@ -40,23 +40,8 @@ button {
     margin: 0px;
 }
 
-a:link {
-    color: black;
-    text-decoration: none;
-}
-
-a:visited {
-    color: black;
-    text-decoration: none;
-}
-
-a:hover {
-    color: black;
-    text-decoration: none;
-}
-
-a:active {
-    color: black;
+a {
+    color: white;
     text-decoration: none;
 }
 
@@ -138,20 +123,82 @@ a:active {
     width: 20vw;
 }
 
-.logo a,
-.navbartab a {
-    color: white;
-}
-
 .navbar {
     display: flex;
     height: 10vh;
-    width: 70vw;
+    width: 80vw;
     justify-content: space-around;
     align-items: center;
 }
 
+.navbartab {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    transition: 0.5s ease-in-out;
+}
+
+.navbartab a,
+.dropdowntitle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.dropdowntitle {
+    color: white;
+}
+
+.dropdown {
+    padding: 1px;
+    margin: 0px;
+    display: none;
+    position: absolute;
+    top: 10vh;
+    left: auto;
+    list-style-type: none;
+    background-color: #1e3d58;
+    width: 15vw;
+}
+
+.dropdowntitle::before {
+    content: '';
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin: 3px 6px;
+    transform: rotate(45deg);
+}
+
+.dropdown li:hover {
+    background-color: #95dbe5;
+}
+
+.dropdown li {
+    height: 5vh;
+}
+
+.dropdown li a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbartab:hover .dropdown {
+    display: block;
+}
+
 .navbartab:hover {
+    background-color: #059dc0;
+    transition: 0.5s ease-in-out;
+}
+
+.navbartab a:hover {
     mix-blend-mode: soft-light;
 }
 
